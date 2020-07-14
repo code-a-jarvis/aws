@@ -19,3 +19,11 @@ Route::get('/', function () {
 Route::get('/addmore', function () {
     return view('addmore');
 });
+Route::resource('resources','ResourceController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
