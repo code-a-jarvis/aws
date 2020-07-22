@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Resource;
 
 class ResourceController extends Controller
 {
@@ -13,8 +14,8 @@ class ResourceController extends Controller
      */
     public function index()
     {
-        $resources=Resource::all()->paginate(5);
-        return view('resources.index')->with('resources',$resources);
+        $resources=Resource::all();
+         return view('res.index')->with('resources',$resources);
     }
 
     /**

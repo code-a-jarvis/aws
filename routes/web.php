@@ -16,14 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/addmore', function () {
-    return view('addmore');
-});
-Route::resource('resources','ResourceController');
-Auth::routes();
+// Route::get('/addmore', function () {
+//     return view('addmore');
+// });
+
+Route::get('/addmore','PagesController@addmore');
+Route::get('/tasks','TasksController@index');
+Route::get('/task/add','TasksController@add');
+Route::post('task/save','TaskController@save');
+Route::post('ajax', 'TasksController@save')->name('ajaxRequest.post');
+Route::resource('resources','ResourceController');  
+
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/progress','PagesController@progress');
+Route::get('/progress/update','ProgressCountController@increase');

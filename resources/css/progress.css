@@ -1,0 +1,7 @@
+#clip {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+  }

@@ -23,6 +23,7 @@
             .full-height {
                 height: 100vh;
             }
+            
 
             .flex-center {
                 align-items: center;
@@ -81,11 +82,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel 4
-
-                    
+                    MIRRORME
                 </div>
-                <a href="/addmore">add </a>
             </div>
         </div>
     </body>
