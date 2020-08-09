@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/addmore','PagesController@addmore');
 Route::get('/tasks','TasksController@index');
 Route::get('/task/add','TasksController@add');
-Route::post('task/save','TaskController@save');
+Route::post('task/save','TasksController@save');
 Route::post('ajax', 'TasksController@save')->name('ajaxRequest.post');
 Route::resource('resources','ResourceController');  
 
@@ -32,3 +32,5 @@ Auth::routes(['register' => false]);
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/progress','PagesController@progress');
 Route::get('/progress/update','ProgressCountController@increase');
+
+Route::resource('posts', 'PostsController');
