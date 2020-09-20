@@ -76,8 +76,12 @@ class PagesController extends Controller
       return view('cricketselect')->with($data);
       //return $toshow;
     }
-
+    
     public function getscores(Request $request){
+        return "hello";
+    }
+    
+    public function getiscores(Request $request){
       $team1=$request->input('id1');
       $team2=$request->input('id2');
       $p1=$this->cricketcompute($team1);
