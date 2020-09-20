@@ -85,7 +85,7 @@ class PagesController extends Controller
         foreach ($team1 as $player){
           echo $player;
         }
-        //return $this->getiscores($team1,$team2);
+        return $this->getiscores($team1,$team2);
     }
     
     public function getiscores($team1,$team2){
