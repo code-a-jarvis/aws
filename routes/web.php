@@ -20,21 +20,21 @@ Route::get('/', function () {
 //     return view('addmore');
 // });
 
-Route::get('/addmore','PagesController@addmore');
+Route::get('/addmore','PagesController@addmore')->middleware('auth');
 Route::get('/cricket','PagesController@cricket');
 Route::get('/cricket/compute','PagesController@getscores');
 Route::get('/cricket/test','PagesController@test');
 Route::get('/cricket/enterid','PagesController@enterid');
-Route::get('/tasks','TasksController@index');
-Route::get('/task/add','TasksController@add');
-Route::post('task/save','TasksController@save');
-Route::post('ajax', 'TasksController@save')->name('ajaxRequest.post');
-Route::resource('resources','ResourceController');  
+Route::get('/tasks','TasksController@index')->middleware('auth');
+Route::get('/task/add','TasksController@add')->middleware('auth');
+Route::post('task/save','TasksController@save')->middleware('auth');
+Route::post('ajax', 'TasksController@save')->name('ajaxRequest.post')->middleware('auth');
+Route::resource('resources','ResourceController')->middleware('auth');  
 
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/progress','PagesController@progress');
-Route::get('/progress/update','ProgressCountController@increase');
+Route::get('/progress','PagesController@progress')->middleware('auth');
+Route::get('/progress/update','ProgressCountController@increase')->middleware('auth');
 
-Route::resource('posts', 'PostsController');
+Route::resource('posts', 'PostsController')->middleware('auth');
