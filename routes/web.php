@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 Route::get('/addmore','PagesController@addmore')->middleware('auth');
 Route::get('/cricket','PagesController@cricket');
-Route::post('/cricket/compute','PagesController@getscores');
+Route::post('/cricket/compute/','PagesController@getscores');
 Route::get('/cricket/test','PagesController@test');
 Route::get('/cricket/enterid','PagesController@enterid');
 Route::get('/tasks','TasksController@index')->middleware('auth');
