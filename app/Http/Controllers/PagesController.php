@@ -82,6 +82,9 @@ class PagesController extends Controller
         $team2=$_POST['id2'];
         var_dump($team1);
         var_dump($team2);
+        foreach ($team1 as $player){
+          echo $player;
+        }
         //return $this->getiscores($team1,$team2);
     }
     
