@@ -91,7 +91,7 @@ class PagesController extends Controller
      $final.=$p1;
      $final.="\n Team B score is ";
      $final.=$p2;
-    return $p1;
+    return $final;
     }
     public function cricketcompute($team){
       //$team=$request->input('id');
