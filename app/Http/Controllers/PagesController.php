@@ -78,9 +78,9 @@ class PagesController extends Controller
     }
     
     public function getscores(Request $request){
-        $team1=$request->input('id1');
+        $team1=$_POST['id1'];
         $team2=$request->input('id2[]');
-        return $team1.$team2;
+        return gettype($team1);
     }
     
     public function getiscores(Request $request){
