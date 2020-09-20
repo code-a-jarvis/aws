@@ -85,7 +85,7 @@ class PagesController extends Controller
         foreach ($team1 as $player){
           echo $player;
         }
-        return $this->getiscores($team1,$team2);
+        echo $this->getiscores($team1,$team2);
     }
     
     public function getiscores($team1,$team2){
@@ -96,7 +96,7 @@ class PagesController extends Controller
     }
     public function cricketcompute($team){
       //$team=$request->input('id');
-      $result=file_get_contents("C:\Users\NAVANE\Desktop\match-result.txt");
+      $result=file_get_contents("match.txt");
       $data=json_decode($result,true);
       $batting=$data['data']['batting'];
       $bowling=$data['data']['bowling'];
