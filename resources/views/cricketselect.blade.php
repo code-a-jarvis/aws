@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-{{ Form::open(array('action' => 'PagesController@getscores','id'=>'addform','method'=> 'get')) }}
+{{ Form::open(array('action' => 'PagesController@getscores','id'=>'addform','method'=> 'post')) }}
 <div class="container">
     <div class="row">
 <div id="teamA" class="col text-center">
