@@ -80,11 +80,6 @@ class PagesController extends Controller
     public function getscores(Request $request){
         $team1=$_POST['id1'];
         $team2=$_POST['id2'];
-        var_dump($team1);
-        var_dump($team2);
-        foreach ($team1 as $player){
-          echo $player;
-        }
         echo $this->getiscores($team1,$team2);
     }
     
@@ -92,7 +87,11 @@ class PagesController extends Controller
       $p1=$this->cricketcompute($team1);
       $p2=$this->cricketcompute($team2);
      // $p1="TeamA score is".$p1."TeamB score is".$p2;
-      return $p1;
+     $final="Team A score is";
+     $final.=$p1;
+     $final.="\n Team B score is ";
+     $final.=$p2;
+    return $p1;
     }
     public function cricketcompute($team){
       //$team=$request->input('id');
