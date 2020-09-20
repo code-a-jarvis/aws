@@ -79,13 +79,11 @@ class PagesController extends Controller
     
     public function getscores(Request $request){
         $team1=$_POST['id1'];
-        $team2=$request->input('id2[]');
-        return gettype($team1);
+        $team2=$_POST['id2'];
+        return $this->getiscores($team1,$team2);
     }
     
-    public function getiscores(Request $request){
-      $team1=$request->input('id1');
-      $team2=$request->input('id2');
+    public function getiscores($team1,$team2){
       $p1=$this->cricketcompute($team1);
       $p2=$this->cricketcompute($team2);
       $p1="TeamA score is".$p1."TeamB score is".$p2;
