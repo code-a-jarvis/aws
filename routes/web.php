@@ -21,6 +21,10 @@ Route::get('/', function () {
 // });
 
 Route::get('/addmore','PagesController@addmore');
+Route::get('/cricket','PagesController@cricket');
+Route::get('/cricket/compute','PagesController@getscores');
+Route::get('/cricket/test','PagesController@test');
+Route::get('/cricket/enterid','PagesController@enterid');
 Route::get('/tasks','TasksController@index');
 Route::get('/task/add','TasksController@add');
 Route::post('task/save','TasksController@save');
