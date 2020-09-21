@@ -89,7 +89,7 @@ class PagesController extends Controller
      // $p1="TeamA score is".$p1."TeamB score is".$p2;
      $final="Team A score is";
      $final.=$p1;
-     $final.="\n Team B score is ";
+     $final.="/n Team B score is ";
      $final.=$p2;
     return $final;
     }
@@ -138,7 +138,7 @@ class PagesController extends Controller
         $score=$scores[$player];
         if($score['R']!=0){
         $points+=$score['R']*0.5;
-        if($points>=50 && $points<=99){$points+=4;}
+        if($score['R']>=50 && $score['R']<=99){$points+=4;}
         else if($points>=100){$points+=8;}
         }
         else {$points+=-2;}
@@ -168,7 +168,7 @@ class PagesController extends Controller
       foreach ($team as $player){
         if(array_key_exists($player,$scores)){
         $score=$scores[$player];
-        $points+=$score['W']*15;
+        $points+=$score['W']*10;
         $points+=$score['M']*4;
         if($score['W']>=5){
           $points+=8;
