@@ -25,6 +25,7 @@ Route::get('/cricket','PagesController@cricket');
 Route::post('/cricket/compute/','PagesController@getscores');
 Route::get('/cricket/test','PagesController@test');
 Route::get('/cricket/enterid','PagesController@enterid');
+Route::get('/cricket/choosematch','PagesController@choosematch');
 Route::get('/tasks','TasksController@index')->middleware('auth');
 Route::get('/task/add','TasksController@add')->middleware('auth');
 Route::post('task/save','TasksController@save')->middleware('auth');

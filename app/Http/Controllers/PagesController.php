@@ -39,9 +39,42 @@ class PagesController extends Controller
       public function enterid(){
         return view('enterid');
       }
+
+      public function choosematch(){
+        $url="https://cricapi.com/api/matches?apikey=S5wcd8HOo8SHjVfwuWIkFXoh2Cw1";
+        $txt=file_get_contents($url);
+        $myfile=fopen('matches.txt','w');
+        fwrite($myfile,$txt);
+        fclose($myfile);
+        $result=file_get_contents("matches.txt");
+        $teams=array();
+        array_push($teams,"Kings XI Punjab");
+        array_push($teams,"Royal Challengers Bangalore");
+        array_push($teams,"Chennai Super Kings");
+        array_push($teams,"Delhi Capitals");
+        array_push($teams,"Kolkata Knight Riders");
+        array_push($teams,"Sunrisers Hyderabad");
+        array_push($teams,"Rajasthan Royals");
+        array_push($teams,"Mumbai Indians");
+        $result=json_decode($result,true);
+       // var_dump($result);
+        $matches=$result['matches'] ;
+        $tosend=array();
+        foreach ($matches as $match){
+          if(in_array($match['team-1'], $teams)&&$match['matchStarted']!=false){
+            array_push($tosend,$match);
+          }
+        }
+       $data=array(
+        "matches"=>array_slice($tosend,0,3),
+       );
+        return view('selectmatch')->with($data);
+
+      }
     
       public function test(Request $request){
         $id=$request->input('id');
+        //return $id;
         $url="https://cricapi.com/api/fantasySummary?apikey=S5wcd8HOo8SHjVfwuWIkFXoh2Cw1&unique_id=";
         $url.=$id;
         $txt=file_get_contents($url);
