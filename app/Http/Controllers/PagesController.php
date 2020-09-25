@@ -10,7 +10,8 @@ use App\Score;
 class PagesController extends Controller
 {
     //
-
+   public $playerwisescores;
+   public $pidtoname;
     public function progress()
     {
         $progress=Progresscount::where('id',1)->get();
@@ -48,24 +49,7 @@ class PagesController extends Controller
         fwrite($myfile,$txt);
         fclose($myfile);
         return redirect('/cricket');
-      }
-
-    public function cricketView($today){
-      $total="total";
-       $scores=Score::where('Match','like','%'.$total.'%')->get();
-       $scoreA=$scores['teamA'];
-       $scoreB=$scores['teamB'];
-       $lastmatch=$score['match'];
-       $lastmatch=substr($lastmatch,6);
-       $data=array(
-         "scoreA"=>$scoreA,
-         "scoreB"=>$scoreB,
-         "lastmatch"=>$lastmatch,
-         "today"=>$today,
-       );
-       return view('scoreboard')->with($data);
-
-    }  
+      } 
 
     public function cricket(){
       $txt="ty";
@@ -76,14 +60,20 @@ class PagesController extends Controller
       $team_data=$match_data["team"];
       $team1=$team_data[0]["players"];
       $team2=$team_data[1]["players"];
+
       $team1_players=array('Select the players');
       $team2_players=array('select the players');
       foreach ($team1 as $player){
         array_push($team1_players,$player["name"]);
+        $this->pidtoname[$player['pid']]=$player['name'];
+        $this->playerwisescores[$player['pid']]=0;
       }
 
       foreach ($team2 as $player){
         array_push($team2_players,$player["name"]);
+        $this->pidtoname[$player['pid']]=$player['name'];
+        $this->playerwisescores[$player['pid']]=0;
+
       }
       $toshow=$team1_players;
       $data=array(
@@ -91,14 +81,57 @@ class PagesController extends Controller
         'team2'=>$team2,
     );
     //return $team1[0];
-      return view('cricketselect')->with($data);
-      //return $toshow;
+   // $GLOBALS['ps']=$this->playerwisescores;
+     return view('cricketselect')->with($data);
     }
     
     public function getscores(Request $request){
-        $team1=$_POST['id1'];
-        $team2=$_POST['id2'];
-        return view('scoreboard')->with($this->getiscores($team1,$team2));
+
+        $teamid1=$_POST['id1'];
+        $teamid2=$_POST['id2'];
+       // $this->playerwisescores=$GLOBALS['ps'];
+        $result=file_get_contents("match.txt");
+      $hello="pol";
+      $match_data=json_decode($result,true);
+      $match_data=$match_data['data'];
+      $team_data=$match_data["team"];
+      $team1=$team_data[0]["players"];
+      $team2=$team_data[1]["players"];
+
+      $team1_players=array('Select the players');
+      $team2_players=array('select the players');
+      foreach ($team1 as $player){
+        array_push($team1_players,$player["name"]);
+        $this->pidtoname[$player['pid']]=$player['name'];
+        $this->playerwisescores[$player['pid']]=0;
+      }
+
+      foreach ($team2 as $player){
+        array_push($team2_players,$player["name"]);
+        $this->pidtoname[$player['pid']]=$player['name'];
+        $this->playerwisescores[$player['pid']]=0;
+
+      }
+        $points=$this->getiscores($teamid1,$teamid2);
+       $t1points=array();
+       $t2points=array();
+        foreach ($teamid1 as $player){
+          $t2point['name']=$this->pidtoname[$player];
+          $t2point['score']=$this->playerwisescores[$player];
+          array_push($t1points,$t2point);
+        }
+        foreach ($teamid2 as $player){
+          $t2point['name']=$this->pidtoname[$player];
+          $t2point['score']=$this->playerwisescores[$player];
+          array_push($t2points,$t2point);
+        }
+        $data=array(
+          "scoreA"=>$points['scoreA'],
+          "scoreB"=>$points['scoreB'],
+          "t1"=>$t1points,
+          "t2"=>$t2points,
+        );
+        return view('scoreboard')->with($data);
     }
     
     public function getiscores($team1,$team2){
@@ -122,6 +155,7 @@ class PagesController extends Controller
       $batting=$data['data']['batting'];
       $bowling=$data['data']['bowling'];
       $fielding=$data['data']['fielding'];
+
       $points=0;
       $battingscores=array();
       foreach ($batting[0]["scores"] as $it){
@@ -146,7 +180,7 @@ class PagesController extends Controller
       foreach ($fielding[1]["scores"] as $it){
         $fieldingscores[$it['pid']]=$it;
       }
-
+      
       $points+=$this->computefieldingpoints($fieldingscores,$team);
       $points+=$this->computebattingpoints($battingscores,$team);
       $points+=$this->computebowlingpoints($bowlingscores,$team);
@@ -156,7 +190,9 @@ class PagesController extends Controller
     public function computebattingpoints($scores,$players){
       $points=0;
       foreach ($players as $player){
+       
         if(array_key_exists($player,$scores)){
+          $thisplayerpoints=$points;
         $score=$scores[$player];
         if($score['R']!=0){
         $points+=$score['R']*0.5;
@@ -179,6 +215,9 @@ class PagesController extends Controller
           $points+=-1;
         }
       }
+    $thisplayerpoints=$points-$thisplayerpoints;
+    $this->playerwisescores[$player]+=$thisplayerpoints;
+
     }
       }
      
@@ -188,7 +227,9 @@ class PagesController extends Controller
     public function computebowlingpoints($scores,$team){
       $points=0;
       foreach ($team as $player){
+        
         if(array_key_exists($player,$scores)){
+          $thisplayerpoints=$points;
         $score=$scores[$player];
         $points+=$score['W']*10;
         $points+=$score['M']*4;
@@ -226,6 +267,8 @@ class PagesController extends Controller
         $points+=0;
       }
       }
+     $thisplayerpoints=$points-$thisplayerpoints;
+     $this->playerwisescores[$player]+=$thisplayerpoints; 
     }
       }
       return $points;
@@ -236,10 +279,13 @@ class PagesController extends Controller
 
       foreach ($players as $player){
         if(array_key_exists($player,$scores)){
+          $thisplayerpoints=$points;
         $score=$scores[$player];
         $points+=$score['catch']*4;
         $points+=$score['stumped']*6;
         $points+=$score['runout']*4;
+        $thisplayerpoints=$points-$thisplayerpoints;
+        $this->playerwisescores[$player]+=$thisplayerpoints;
         }
       }
 
