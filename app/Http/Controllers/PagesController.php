@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use App\Progresscount;
+use App\Score;
 
 class PagesController extends Controller
 {
@@ -49,6 +50,23 @@ class PagesController extends Controller
         return redirect('/cricket');
       }
 
+    public function cricketView($today){
+      $total="total";
+       $scores=Score::where('Match','like','%'.$total.'%')->get();
+       $scoreA=$scores['teamA'];
+       $scoreB=$scores['teamB'];
+       $lastmatch=$score['match'];
+       $lastmatch=substr($lastmatch,6);
+       $data=array(
+         "scoreA"=>$scoreA,
+         "scoreB"=>$scoreB,
+         "lastmatch"=>$lastmatch,
+         "today"=>$today,
+       );
+       return view('scoreboard')->with($data);
+
+    }  
+
     public function cricket(){
       $txt="ty";
       $result=file_get_contents("match.txt");
@@ -80,7 +98,7 @@ class PagesController extends Controller
     public function getscores(Request $request){
         $team1=$_POST['id1'];
         $team2=$_POST['id2'];
-        echo $this->getiscores($team1,$team2);
+        return view('scoreboard')->with($this->getiscores($team1,$team2));
     }
     
     public function getiscores($team1,$team2){
@@ -89,9 +107,13 @@ class PagesController extends Controller
      // $p1="TeamA score is".$p1."TeamB score is".$p2;
      $final="Team A score is";
      $final.=$p1;
-     $final.="/n Team B score is ";
+     $final.=" Team B score is ";
      $final.=$p2;
-    return $final;
+     $data=array(
+       "scoreA"=>$p1,
+       "scoreB"=>$p2,
+     );
+    return $data;
     }
     public function cricketcompute($team){
       //$team=$request->input('id');
@@ -139,7 +161,7 @@ class PagesController extends Controller
         if($score['R']!=0){
         $points+=$score['R']*0.5;
         if($score['R']>=50 && $score['R']<=99){$points+=4;}
-        else if($points>=100){$points+=8;}
+        else if($score['R']>=100){$points+=8;}
         }
         else {$points+=-2;}
         $points+=$score['4s']*0.5;
