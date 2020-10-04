@@ -66,7 +66,7 @@ class PagesController extends Controller
           }
         }
        $data=array(
-        "matches"=>array_slice($tosend,0,3),
+        "matches"=>array_slice($tosend,0,4),
        );
         return view('selectmatch')->with($data);
 
@@ -215,8 +215,11 @@ class PagesController extends Controller
       }
       
       $points+=$this->computefieldingpoints($fieldingscores,$team);
+      //var_dump($points);
       $points+=$this->computebattingpoints($battingscores,$team);
+      //var_dump($points);
       $points+=$this->computebowlingpoints($bowlingscores,$team);
+      //var_dump($points);
       return $points;
     }
 
