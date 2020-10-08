@@ -235,7 +235,7 @@ class PagesController extends Controller
         if($score['R']>=50 && $score['R']<=99){$points+=4;}
         else if($score['R']>=100){$points+=8;}
         }
-        else {$points+=-2;}
+        else if(array_key_exists('dismissal',$score)) {$points+=-2;}
         $points+=$score['4s']*0.5;
         $points+=$score['6s']*1;
       $sr=$score['SR'];
