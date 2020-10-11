@@ -41,7 +41,7 @@ class PagesController extends Controller
       }
 
       public function choosematch(){
-        $url="https://cricapi.com/api/matches?apikey=S5wcd8HOo8SHjVfwuWIkFXoh2Cw1";
+        $url="https://cricapi.com/api/matches?apikey=62RBUPRBexUXXSq4qPsTM4XXpft1";
         $txt=file_get_contents($url);
         $myfile=fopen('matches.txt','w');
         fwrite($myfile,$txt);
@@ -75,7 +75,7 @@ class PagesController extends Controller
       public function test(Request $request){
         $id=$request->input('id');
         //return $id;
-        $url="https://cricapi.com/api/fantasySummary?apikey=S5wcd8HOo8SHjVfwuWIkFXoh2Cw1&unique_id=";
+        $url="https://cricapi.com/api/fantasySummary?apikey=62RBUPRBexUXXSq4qPsTM4XXpft1&unique_id=";
         $url.=$id;
         $txt=file_get_contents($url);
         $myfile=fopen('match.txt','w');
