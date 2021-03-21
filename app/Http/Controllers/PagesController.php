@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 use Illuminate\Support\Facades\Config;
 use App\Progresscount;
 use App\Score;
@@ -33,7 +34,13 @@ class PagesController extends Controller
     public function checkapi(Request $request){
        
       $id=$request->input('payload');
-      var_dump($id);
+      if($id=="check"){
+        $value=DB::table('checkapi')->get();
+        var_dump($value);
+      }
+      else{
+        DB::insert('UPDATE `checkapi` SET `payload`=?,`ide`=?',[$id,1]);
+      }
     }
 
 
