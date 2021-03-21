@@ -30,6 +30,12 @@ class PagesController extends Controller
        
       return view('addmore');
     }
+    public function checkapi(Request $request){
+       
+      $id=$request->input('payload');
+      var_dump($id);
+    }
+
 
     public function tasks(){
        
@@ -82,6 +88,17 @@ class PagesController extends Controller
         fwrite($myfile,$txt);
         fclose($myfile);
         return redirect('/cricket');
+      } 
+
+      public function addToBirthday(Request $request){
+        $name=$request->input('name');
+        $date=$request->input('bdate');
+        $post = new Birthday;
+        $post->name = $name;
+        $post->bdate = $date;
+        $post->save();
+      //  return redirect('/posts')->with('success', 'Post Created');
+        return redirect('/home')->with('success', 'Birthday Created');
       } 
 
     public function cricket(){

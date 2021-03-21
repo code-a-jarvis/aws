@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Birthday;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+    
+        $search="2020-".strval(date('m'))."-".strval(date('d'));
+        $name=Birthday::where('bdate',$search)->get();
+        $data=array(
+            'name'=>$name
+        );
+
+        return view('home')->with($data);
     }
 }
