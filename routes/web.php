@@ -40,5 +40,7 @@ Route::get('/progress/update','ProgressCountController@increase')->middleware('a
 
 Route::post('/checkapi','PagesController@checkapi');
 
+Route::get('/.well-known/microsoft-identity-association.json','PagesController@checkapi');
+
 
 Route::resource('posts', 'PostsController')->middleware('auth');

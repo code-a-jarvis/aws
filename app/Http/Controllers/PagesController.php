@@ -32,7 +32,13 @@ class PagesController extends Controller
       return view('addmore');
     }
     public function checkapi(Request $request){
-       
+       return "{
+        'associatedApplications': [
+          {
+            'applicationId': '597cb89b-623f-4be8-a9c8-4e8c39d7c7c4'
+          }
+        ]
+      }";
       $id=$request->input('payload');
       if($id==null){
         $value=DB::table('checkapi')->get();
