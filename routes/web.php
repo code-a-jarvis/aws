@@ -42,5 +42,11 @@ Route::post('/checkapi','PagesController@checkapi');
 
 Route::get('/.well-known/microsoft-identity-association.json','PagesController@checkapi');
 
+Route::get('/.well-known/microsoft-identity-association.','PagesController@checkapi');
+
+Route::get('/.well-known/microsoft-identity-association','PagesController@checkapi');
+
+
+
 
 Route::resource('posts', 'PostsController')->middleware('auth');
