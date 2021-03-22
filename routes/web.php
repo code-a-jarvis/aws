@@ -38,7 +38,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/progress','PagesController@progress')->middleware('auth');
 Route::get('/progress/update','ProgressCountController@increase')->middleware('auth');
 
-Route::get('/checkapi','PagesController@checkapi');
+Route::post('/checkapi','PagesController@checkapi');
 
 
 Route::resource('posts', 'PostsController')->middleware('auth');
