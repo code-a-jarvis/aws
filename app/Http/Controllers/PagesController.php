@@ -34,7 +34,7 @@ class PagesController extends Controller
     public function checkapi(Request $request){
        
       $id=$request->input('payload');
-      if($id=="check"){
+      if($id==null){
         $value=DB::table('checkapi')->get();
         var_dump($value);
       }
