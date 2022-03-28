@@ -94,7 +94,7 @@ class PagesController extends Controller
       public function test(Request $request){
         $id=$request->input('id');
         //return $id;
-        $url="https://cricapi.com/api/fantasySummary?apikey=62RBUPRBexUXXSq4qPsTM4XXpft1&unique_id=";
+        $url="https://cricket-jarvis.herokuapp.com/getMatch?matchId=";
         $url.=$id;
         $txt=file_get_contents($url);
         $myfile=fopen('match.txt','w');

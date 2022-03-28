@@ -1,1 +1,567 @@
-{"matches":[{"unique_id":1216523,"date":"2020-10-10T00:00:00.000Z","dateTimeGMT":"2020-10-10T10:00:00.000Z","team-1":"Kings XI Punjab","team-2":"Kolkata Knight Riders","type":"Twenty20","squad":true,"toss_winner_team":"Kolkata Knight Riders","winner_team":"Kolkata Knight Riders","matchStarted":true},{"unique_id":1216525,"date":"2020-10-10T00:00:00.000Z","dateTimeGMT":"2020-10-10T14:00:00.000Z","team-1":"Chennai Super Kings","team-2":"Royal Challengers Bangalore","type":"Twenty20","squad":true,"toss_winner_team":"Royal Challengers Bangalore","winner_team":"Royal Challengers Bangalore","matchStarted":true},{"unique_id":1231336,"date":"2020-10-10T00:00:00.000Z","dateTimeGMT":"2020-10-10T14:30:00.000Z","team-1":"Central Punjab (Pakistan)","team-2":"Sindh","type":"Twenty20","squad":true,"toss_winner_team":"Sindh","winner_team":"Sindh","matchStarted":true},{"unique_id":1231335,"date":"2020-10-10T00:00:00.000Z","dateTimeGMT":"2020-10-10T10:00:00.000Z","team-1":"Balochistan","team-2":"Khyber Pakhtunkhwa","type":"Twenty20","squad":true,"toss_winner_team":"Balochistan","winner_team":"Balochistan","matchStarted":true},{"unique_id":1234665,"date":"2020-10-10T00:00:00.000Z","dateTimeGMT":"2020-10-10T05:00:00.000Z","team-1":"Boost Region","team-2":"Band-e-Amir Region","type":"ODI","squad":true,"toss_winner_team":"Band-e-Amir Region","winner_team":"Band-e-Amir Region","matchStarted":true},{"unique_id":1233443,"date":"2020-10-10T00:00:00.000Z","dateTimeGMT":"2020-10-10T00:00:00.000Z","team-1":"South Australia","team-2":"Western Australia","squad":true,"toss_winner_team":"Western Australia","matchStarted":true,"type":""},{"unique_id":1233444,"date":"2020-10-10T00:00:00.000Z","dateTimeGMT":"2020-10-10T00:00:00.000Z","team-1":"Queensland","team-2":"Tasmania","squad":true,"toss_winner_team":"Tasmania","matchStarted":true,"type":""},{"unique_id":1216507,"date":"2020-10-11T00:00:00.000Z","dateTimeGMT":"2020-10-11T10:00:00.000Z","team-1":"Sunrisers Hyderabad","team-2":"Rajasthan Royals","type":"Twenty20","squad":true,"toss_winner_team":"Sunrisers Hyderabad","winner_team":"Rajasthan Royals","matchStarted":true},{"unique_id":1216529,"date":"2020-10-11T00:00:00.000Z","dateTimeGMT":"2020-10-11T14:00:00.000Z","team-1":"Mumbai Indians","team-2":"Delhi Capitals","type":"Twenty20","squad":true,"toss_winner_team":"Delhi Capitals","matchStarted":true},{"unique_id":1231338,"date":"2020-10-11T00:00:00.000Z","dateTimeGMT":"2020-10-11T14:30:00.000Z","team-1":"Balochistan","team-2":"Sindh","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231337,"date":"2020-10-11T00:00:00.000Z","dateTimeGMT":"2020-10-11T10:00:00.000Z","team-1":"Northern (Pakistan)","team-2":"Southern Punjab (Pakistan)","type":"Twenty20","squad":true,"toss_winner_team":"Southern Punjab (Pakistan)","winner_team":"Northern (Pakistan)","matchStarted":true},{"unique_id":1234666,"date":"2020-10-11T00:00:00.000Z","dateTimeGMT":"2020-10-11T05:00:00.000Z","team-1":"Speen Ghar Region","team-2":"Mis Ainak Region","type":"ODI","squad":true,"toss_winner_team":"Speen Ghar Region","winner_team":"Mis Ainak Region","matchStarted":true},{"unique_id":1234897,"date":"2020-10-11T00:00:00.000Z","dateTimeGMT":"2020-10-11T07:30:00.000Z","team-1":"Mahmudullah XI","team-2":"Najmul XI","squad":false,"matchStarted":true,"type":""},{"unique_id":1216540,"date":"2020-10-12T00:00:00.000Z","dateTimeGMT":"2020-10-12T14:00:00.000Z","team-1":"Royal Challengers Bangalore","team-2":"Kolkata Knight Riders","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231340,"date":"2020-10-12T00:00:00.000Z","dateTimeGMT":"2020-10-12T14:30:00.000Z","team-1":"Balochistan","team-2":"Central Punjab (Pakistan)","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1234667,"date":"2020-10-12T00:00:00.000Z","dateTimeGMT":"2020-10-12T04:30:00.000Z","team-1":"Boost Region","team-2":"Amo Region","type":"ODI","squad":true,"matchStarted":false},{"unique_id":1231339,"date":"2020-10-12T00:00:00.000Z","dateTimeGMT":"2020-10-12T10:00:00.000Z","team-1":"Khyber Pakhtunkhwa","team-2":"Southern Punjab (Pakistan)","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216528,"date":"2020-10-13T00:00:00.000Z","dateTimeGMT":"2020-10-13T14:00:00.000Z","team-1":"Sunrisers Hyderabad","team-2":"Chennai Super Kings","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1234898,"date":"2020-10-13T00:00:00.000Z","dateTimeGMT":"2020-10-13T07:30:00.000Z","team-1":"Mahmudullah XI","team-2":"Tamim XI","squad":false,"matchStarted":false,"type":""},{"unique_id":1231342,"date":"2020-10-13T00:00:00.000Z","dateTimeGMT":"2020-10-13T14:30:00.000Z","team-1":"Central Punjab (Pakistan)","team-2":"Southern Punjab (Pakistan)","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231341,"date":"2020-10-13T00:00:00.000Z","dateTimeGMT":"2020-10-13T10:00:00.000Z","team-1":"Khyber Pakhtunkhwa","team-2":"Sindh","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1234668,"date":"2020-10-13T00:00:00.000Z","dateTimeGMT":"2020-10-13T05:00:00.000Z","team-1":"Speen Ghar Region","team-2":"Band-e-Amir Region","type":"ODI","squad":true,"matchStarted":false},{"unique_id":1216543,"date":"2020-10-14T00:00:00.000Z","dateTimeGMT":"2020-10-14T14:00:00.000Z","team-1":"Delhi Capitals","team-2":"Rajasthan Royals","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231344,"date":"2020-10-14T00:00:00.000Z","dateTimeGMT":"2020-10-14T14:30:00.000Z","team-1":"Khyber Pakhtunkhwa","team-2":"Central Punjab (Pakistan)","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231343,"date":"2020-10-14T00:00:00.000Z","dateTimeGMT":"2020-10-14T10:00:00.000Z","team-1":"Northern (Pakistan)","team-2":"Sindh","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1234669,"date":"2020-10-14T00:00:00.000Z","dateTimeGMT":"2020-10-14T05:00:00.000Z","team-1":"Mis Ainak Region","team-2":"Amo Region","type":"ODI","squad":true,"matchStarted":false},{"unique_id":1216531,"date":"2020-10-15T00:00:00.000Z","dateTimeGMT":"2020-10-15T14:00:00.000Z","team-1":"Royal Challengers Bangalore","team-2":"Kings XI Punjab","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1234899,"date":"2020-10-15T00:00:00.000Z","dateTimeGMT":"2020-10-15T07:30:00.000Z","team-1":"Najmul XI","team-2":"Tamim XI","squad":false,"matchStarted":false,"type":""},{"unique_id":1231346,"date":"2020-10-15T00:00:00.000Z","dateTimeGMT":"2020-10-15T14:30:00.000Z","team-1":"Sindh","team-2":"Southern Punjab (Pakistan)","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231345,"date":"2020-10-15T00:00:00.000Z","dateTimeGMT":"2020-10-15T10:00:00.000Z","team-1":"Balochistan","team-2":"Northern (Pakistan)","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1234670,"date":"2020-10-15T00:00:00.000Z","dateTimeGMT":"2020-10-15T05:00:00.000Z","team-1":"Boost Region","team-2":"Speen Ghar Region","type":"ODI","squad":true,"matchStarted":false},{"unique_id":1216526,"date":"2020-10-16T00:00:00.000Z","dateTimeGMT":"2020-10-16T14:00:00.000Z","team-1":"Mumbai Indians","team-2":"Kolkata Knight Riders","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231348,"date":"2020-10-16T00:00:00.000Z","dateTimeGMT":"2020-10-16T14:30:00.000Z","team-1":"Balochistan","team-2":"Southern Punjab (Pakistan)","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1231347,"date":"2020-10-16T00:00:00.000Z","dateTimeGMT":"2020-10-16T10:00:00.000Z","team-1":"Northern (Pakistan)","team-2":"Khyber Pakhtunkhwa","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1234671,"date":"2020-10-16T00:00:00.000Z","dateTimeGMT":"2020-10-16T05:00:00.000Z","team-1":"Band-e-Amir Region","team-2":"Mis Ainak Region","type":"ODI","squad":true,"matchStarted":false},{"unique_id":1216509,"date":"2020-10-17T00:00:00.000Z","dateTimeGMT":"2020-10-17T14:00:00.000Z","team-1":"Delhi Capitals","team-2":"Chennai Super Kings","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216522,"date":"2020-10-17T00:00:00.000Z","dateTimeGMT":"2020-10-17T10:00:00.000Z","team-1":"Rajasthan Royals","team-2":"Royal Challengers Bangalore","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216512,"date":"2020-10-18T00:00:00.000Z","dateTimeGMT":"2020-10-18T10:00:00.000Z","team-1":"Sunrisers Hyderabad","team-2":"Kolkata Knight Riders","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216517,"date":"2020-10-18T00:00:00.000Z","dateTimeGMT":"2020-10-18T14:00:00.000Z","team-1":"Mumbai Indians","team-2":"Kings XI Punjab","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216533,"date":"2020-10-19T00:00:00.000Z","dateTimeGMT":"2020-10-19T14:00:00.000Z","team-1":"Chennai Super Kings","team-2":"Rajasthan Royals","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216546,"date":"2020-10-20T00:00:00.000Z","dateTimeGMT":"2020-10-20T14:00:00.000Z","team-1":"Kings XI Punjab","team-2":"Delhi Capitals","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216494,"date":"2020-10-21T00:00:00.000Z","dateTimeGMT":"2020-10-21T14:00:00.000Z","team-1":"Kolkata Knight Riders","team-2":"Royal Challengers Bangalore","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216518,"date":"2020-10-22T00:00:00.000Z","dateTimeGMT":"2020-10-22T14:00:00.000Z","team-1":"Rajasthan Royals","team-2":"Sunrisers Hyderabad","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216521,"date":"2020-10-23T00:00:00.000Z","dateTimeGMT":"2020-10-23T14:00:00.000Z","team-1":"Chennai Super Kings","team-2":"Mumbai Indians","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216497,"date":"2020-10-24T00:00:00.000Z","dateTimeGMT":"2020-10-24T10:00:00.000Z","team-1":"Kolkata Knight Riders","team-2":"Delhi Capitals","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216498,"date":"2020-10-24T00:00:00.000Z","dateTimeGMT":"2020-10-24T14:00:00.000Z","team-1":"Kings XI Punjab","team-2":"Sunrisers Hyderabad","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216541,"date":"2020-10-25T00:00:00.000Z","dateTimeGMT":"2020-10-25T14:00:00.000Z","team-1":"Rajasthan Royals","team-2":"Mumbai Indians","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216544,"date":"2020-10-25T00:00:00.000Z","dateTimeGMT":"2020-10-25T10:00:00.000Z","team-1":"Royal Challengers Bangalore","team-2":"Chennai Super Kings","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216520,"date":"2020-10-26T00:00:00.000Z","dateTimeGMT":"2020-10-26T14:00:00.000Z","team-1":"Kolkata Knight Riders","team-2":"Kings XI Punjab","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216524,"date":"2020-10-27T00:00:00.000Z","dateTimeGMT":"2020-10-27T14:00:00.000Z","team-1":"Sunrisers Hyderabad","team-2":"Delhi Capitals","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216499,"date":"2020-10-28T00:00:00.000Z","dateTimeGMT":"2020-10-28T14:00:00.000Z","team-1":"Mumbai Indians","team-2":"Royal Challengers Bangalore","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216536,"date":"2020-10-29T00:00:00.000Z","dateTimeGMT":"2020-10-29T14:00:00.000Z","team-1":"Chennai Super Kings","team-2":"Kolkata Knight Riders","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216537,"date":"2020-10-30T00:00:00.000Z","dateTimeGMT":"2020-10-30T14:00:00.000Z","team-1":"Kings XI Punjab","team-2":"Rajasthan Royals","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216502,"date":"2020-10-31T00:00:00.000Z","dateTimeGMT":"2020-10-31T14:00:00.000Z","team-1":"Royal Challengers Bangalore","team-2":"Sunrisers Hyderabad","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216535,"date":"2020-10-31T00:00:00.000Z","dateTimeGMT":"2020-10-31T10:00:00.000Z","team-1":"Delhi Capitals","team-2":"Mumbai Indians","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216506,"date":"2020-11-01T00:00:00.000Z","dateTimeGMT":"2020-11-01T10:00:00.000Z","team-1":"Chennai Super Kings","team-2":"Kings XI Punjab","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216530,"date":"2020-11-01T00:00:00.000Z","dateTimeGMT":"2020-11-01T14:00:00.000Z","team-1":"Kolkata Knight Riders","team-2":"Rajasthan Royals","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216505,"date":"2020-11-02T00:00:00.000Z","dateTimeGMT":"2020-11-02T14:00:00.000Z","team-1":"Delhi Capitals","team-2":"Royal Challengers Bangalore","type":"Twenty20","squad":true,"matchStarted":false},{"unique_id":1216495,"date":"2020-11-03T00:00:00.000Z","dateTimeGMT":"2020-11-03T14:00:00.000Z","team-1":"Sunrisers Hyderabad","team-2":"Mumbai Indians","type":"Twenty20","squad":true,"matchStarted":false}],"v":"1","ttl":333,"provider":{"source":"Various","url":"https://cricapi.com/","pubDate":"2020-10-11T14:02:42.280Z"},"creditsLeft":250}
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="keywords" content="all cricket live score,api cricket,api cricket live score,api for cricket live score,api for cricket score,api for live cricket score,api to get cricket score,api to get live cricket scores,ball by ball live cricket,ball by ball live cricket score,cri cket live score,cric buzz live score,cricapi,cricbuzz api,cricbuzz api free,cricbuzz scorecard,cricket all live score,cricket api,cricket api free,cricket api live score,cricket ball live score,cricket data,cricket data api,cricket in live,cricket ipl score,cricket live,cricket live api,cricket live score,cricket live score api,cricket live score api for website free,cricket live score api free,cricket live score india,cricket live score match,cricket live score today match,cricket match,cricket match score,cricket match today,cricket score api,cricket update,free cricket score api,icc cricket api,india match today,ipl api free,ipl cricket score,live cricket api,live score scorecard,live score today cricket match" /><meta name="description" content="Cricket Data provides you high free performance Cricket API with extensive code samples and consistent email support" /><link rel="icon" href="/img/icon.png" /><link rel="apple-touch-icon" href="/img/icon512.png" /><meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" /><meta name="theme-color" content="#FC0203" />
+    <style>
+        pre.code {
+            white-space: pre;
+            color: #ccc;
+            max-height:400px;
+            overflow:auto;
+        }
+
+            pre.code::before {
+                counter-reset: listing;
+            }
+
+            pre.code code {
+                display: block;
+                counter-increment: listing;
+            }
+
+                pre.code code::before {
+                    content: counter(listing) ".";
+                    display: inline-block;
+                    background: #0a20a3;
+                    color: #ccc;
+                    min-width: 2em;
+                    padding-left: auto;
+                    margin-left: auto;
+                    padding-right: 3px;
+                    margin-right: 3px;
+                    text-align: right;
+                }
+
+        pre {
+            background: #000;
+            color: #fff;
+        }
+
+        #sidepan a {
+            display: block;
+            color: #444;
+        }
+
+            #sidepan a b {
+                color: #222;
+            }
+
+        .string {
+            color: #8d8;
+        }
+
+        .number {
+            color: #23bf3d;
+        }
+
+        .boolean {
+            color: blue;
+        }
+
+        .null {
+            color: magenta;
+        }
+
+        .key {
+            color: #7a9eff;
+        }
+
+        div:empty {
+            display: none;
+        }
+    </style>
+
+
+    <script src="https://cdorg.b-cdn.net/js/jquery-3.6.0.min.js"></script>
+    <script>
+        // Passive event listeners
+        jQuery.event.special.touchstart = {
+            setup: function (_, ns, handle) {
+                this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+            }
+        };
+        jQuery.event.special.touchmove = {
+            setup: function (_, ns, handle) {
+                this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+            }
+        };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer="defer" onload="setTimeout(() => { if(typeof window.bootReady=='function') window.bootReady();}, 50);" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        * {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-font-smoothing: antialiased !important;
+            text-rendering: optimizelegibility !important;
+        }
+
+        .fiv-viv {
+            font-size: 1.1em;
+            float: left;
+            margin-right: 5px;
+            line-height: inherit;
+        }
+
+        .text-yellow {
+            color: gold;
+        }
+
+        .text-brown {
+            color: brown;
+        }
+    </style>
+    <title>
+
+</title>
+
+    
+    <style>
+        body.loading>*:not(#loading) {
+            display:none;
+        }
+        body:not(.loading) #loading {
+            display:none;
+        }
+        body.unloading>*:not(#loading) {
+            transition: opacity .25s linear;
+            opacity:0;
+        }
+        body.unloading #loading {
+            display:block !important;
+            background:rgba(255,255,255,0.5) !important;
+        }
+        BODY>DIV#loading {
+            position:fixed;left:0px;right:0px;top:0px;bottom:0px;
+        }
+    </style>
+
+    <link rel ='canonical' href='https://cricketdata.org/how-to-use-cricket-data-api.aspx?apikey=62rbuprbexuxxsq4qpstm4xxpft1' /></head>
+<body style="background: #fff;" class="loading">
+    <script>
+        window.addEventListener('load', (event) => {
+            $('body').removeClass('loading unloading');
+        });
+        window.addEventListener('pageshow', (event) => {
+            $('body').removeClass('loading unloading');
+        });
+        window.addEventListener('beforeunload', (event) => {
+            $("BODY").removeClass("loading");
+            $("BODY").addClass("unloading");
+        });
+    </script>
+
+    <div id="loading" style="text-align:center;">
+        <h1><Br /><br />Loading...</h1>
+        <progress></progress>
+    </div>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark text-white" style="background: #6ab43e">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand bg-white text-dark px-2" href="/" style="overflow: hidden;position: relative;">
+                <img src="/img/icon.png" style="height: 1.5em;" />
+                <b>Cricket Data</b>
+                <span style="font-size: 8px;float: right;color: #fff;font-weight: bold;transform: rotate(45deg);width: 40px;position: absolute;top: 3px;right: -10px;text-align: center;background: #f00;">BETA</span></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.aspx">Login</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="mainReplace" style="position: relative">
+        <style>
+            #topnav {
+                border-bottom: 1px rgba(100,100,100,0.5) solid;
+            }
+
+            .navbar form {
+                display: none !important;
+            }
+
+
+            .buttbutton {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background: #25d388;
+                border-radius: 20px;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                text-align: center;
+                z-index: 5;
+            }
+
+                .buttbutton img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+            #sidepan A {
+                text-decoration: none
+            }
+
+
+            #topnav .d-none {
+                display: none !important;
+            }
+
+            #menu a.active {
+                color: orange;
+                background: #222;
+                width: 100%;
+            }
+
+            #menu .nav-item {
+                width: 100%;
+            }
+
+            .alert:empty {
+                display: none;
+            }
+        </style>
+
+
+        <div class="row">
+            
+    <div style='position:fixed;z-index:10;top:0px;left:0px;right:0px;padding:7px;text-align:center;background:#800;color:#fff !important;font-weight:bold'>To get your Lifetime Free API key <a href='/signup.aspx' class='btn btn-sm btn-primary'>signup here</a></div><style>#sidepan,BODY { padding-top:36px; }</style>
+    <script>
+        window.onscroll = function () {
+            if (window.scrollY > 50) {
+                sidepan.style.position = "fixed";
+                sidepan.style.top = '0';
+                sidepan.style.height = '100vh';
+                //(window.scrollY - 55) + 'px';
+                bodyholderdiv.style.marginLeft = $('#sidepan').outerWidth() + 'px';
+            }
+            else {
+                bodyholderdiv.style.marginLeft = 0;
+                sidepan.style.position = "relative";
+                sidepan.style.marginTop = 0;
+            }
+        };
+    </script>
+    <div id="sidepan" class="col-3 col-sm-3 col-md-2 bg-dark" style="background: #fff !important; min-height: calc(100vh - 50px); max-height: 100vh; overflow-y: auto"></div>
+    <div class="col-9 col-sm-9 col-md-10 px-0 px-sm-3 pt-3" id="bodyholderdiv">
+        <div class="container-fluid">
+            <div class="row" style="min-height: 30vh;" id="bodyrow">
+                <div class="col-12">
+                    <p>
+                        This section explains the basic working of Cricket Data API - it is not 
+                    language specific. This can guide you in implementing the API for your favourite programming 
+                    language. We also have quite a few <a href="/samples-for-cricket-data-api.aspx">Code Samples 
+                        in different languages</a>, - furthermore if you'd like to 
+                        <a href='mailto:contact@cricketdata.org'>contribute please do reach 
+                            out to us</a>!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .explainer .badge {
+            font-size:0.7em;
+            text-transform:capitalize;
+        }
+        .explainer *:not(.badge) {
+            vertical-align:top;
+        }
+
+        .explainer.table-striped>tbody>tr:nth-of-type(even) {
+            background:#fff !important;
+        }
+        .explainer.table-striped>tbody>tr:nth-of-type(odd) {
+            background:#fefeff !important;
+        }
+    </style>
+    <script>
+
+        let uid = 0;
+
+        $(function () {
+            fetch("/docs/howToInfo.json?when=27032022")
+                .then(x => x.json())
+                .then(x => {
+                    x.forEach(renderCodeSlab);
+                    $("BODY").removeClass("loading");
+                    setTimeout(() => {
+                        try {
+                            document.getElementById(location.hash.replace("#", "")).scrollIntoView()
+                        } catch (e) { }
+                    }, 50);
+                })
+                .catch(e => {
+                    alert("It seems there was an error loading the documentation<br>Please try again later, or reach out to contact@cricketdata.org");
+                });
+        })
+
+        function explainIt(jsoninp) {
+            if (!jsoninp) return "";
+            if (["string", "number"].includes(typeof jsoninp)) {
+                if (("" + jsoninp).includes(":")) {
+                    let tags = ("" + jsoninp).split(":")[0];
+                    let text = ("" + jsoninp).split(":")[1];
+                    return tags.split(",").map(x => {
+                        return "<span class='small badge alert-primary'>" + x + "</span>";
+                    }).join(' ') + " " + text;
+                } else
+                    return jsoninp;
+            }
+
+            let hmz = "";
+            if (jsoninp["~"]) {
+                hmz = jsoninp["~"];
+                delete jsoninp["~"];
+            }
+
+            return hmz + "<table class='table table-striped explainer'>" + Object.keys(jsoninp).map(x => {
+                return `<tr><th>` + x + `</th><td>` + explainIt(jsoninp[x]) + `</td></tr>`;
+            }).join(' ') + "</table>";
+        }
+
+        var baseURL = "https://api.cricapi.com/";
+
+        function renderCodeSlab(x) {
+            if (!x.title) {
+                // spacer
+                $("#sidepan").append("<div>&nbsp;</div>");
+                $("#bodyrow").append(`<div class="col-12 mb-5"><hr></div>`);
+                return;
+            }
+            let curID = (++uid);
+            let uniqueID = (x.title + "").toLowerCase().replace(/[^A-Za-z0-9]/ig, "-");
+            $("#sidepan").append("<a href='#api-" + uniqueID + "-" + curID + "'>" + (x.bold ? ("<b>" + x.title + "</b>") : x.title) + "</a>");
+            $("#bodyrow").append((`
+<div class="col-12 col-md-7 col-lg-8 mb-5"><h2 id='api-${uniqueID + "-" + curID}'>${x.title}</h2>
+${x.info}` + ((x.endpoint) ? `<br><input type='text' class='form-control' readonly value='` + baseURL + x.endpoint + `'/>` : "") +
+                `<br>${explainIt(x.explain)}</div>
+<div class="col-12 col-md-5 col-lg-4 mb-5">`+
+                ((x.input) ? `Input<br /><pre class="code">${lineUp(syntaxHighlight(JSON.stringify(x.input, null, 2)))}</pre>` : "") +
+                ((x.output) ? `Output<br/><small>(data may be truncated for ease of reading)</small><br /><pre class="code">${lineUp(syntaxHighlight(JSON.stringify(x.output, null, 2)))}</pre>` : "") +
+                ((x.playground) ? `<center>Try out the API in real time<br> 
+<a href="/member-test.aspx${x.playground}" class='btn btn-sm btn-success'>Code Playground 
+<i class='fa fa-arrow-right'></i></a></center></div>`: "")).replaceAll("%APIKEY%", "[your api key]"));
+        }
+
+
+
+        function lineUp(somey) {
+            return "<code>" + somey.split("\n").join("</code><code>") + "</code>";
+        }
+
+
+        function syntaxHighlight(json) {
+            json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+                var cls = 'number';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'key';
+                    } else {
+                        cls = 'string';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'boolean';
+                } else if (/null/.test(match)) {
+                    cls = 'null';
+                }
+                return '<span class="' + cls + '">' + match + '</span>';
+            });
+        }
+    </script>
+
+        </div>
+    </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+        window._alert = window.alert;
+        window._confirm = window.confirm;
+        window._prompt = window.prompt;
+        window.alert = function (text, title = "Alert") {
+            $("#genericModal").modal("show");
+            $("#genericModal .modal-body").html(text);
+            $("#genericModal .modal-footer *").remove();
+            $("#genericModal .modal-footer").html(`<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>`);
+            $("#genericModalLabel").html(`<i class="fa fa-info-circle"></i> ` + title);
+            $("#genericModal .btn-close").show();
+        }
+        window.progresswait = function (text) {
+            enableWaiting();
+            $("#genericModal").modal("show");
+            $("#genericModal .modal-body").html(text);
+            $("#genericModal .modal-footer *").remove();
+            $("#genericModal .modal-footer").html(`<i class='fa fa-spin fa-spinner'></i>`);
+            $("#genericModalLabel").html(`<i class="fa fa-info-circle"></i> Please wait`);
+            $("#genericModal .btn-close").hide();
+        }
+        window.progressfinish = function (text) {
+            disableWaiting();
+            $("#genericModal").modal("hide");
+        }
+        window.confirm = function (text, yesfn = function () { }, nofn = function () { }) {
+            enableWaiting();
+            $("#genericModal").modal("show");
+            $("#genericModal .modal-body").html(text);
+            $("#genericModal .modal-footer *").remove();
+            let yesbtn = document.createElement("button");
+            yesbtn.className = "btn btn-primary";
+            yesbtn.innerHTML = "OK";
+            yesbtn.onclick = function () {
+                disableWaiting();
+                $("#genericModal").modal("hide");
+                yesfn();
+            }
+
+            let nobtn = document.createElement("button");
+            nobtn.className = "btn btn-secondary";
+            nobtn.innerHTML = "Cancel";
+            nobtn.onclick = function () {
+                disableWaiting();
+                $("#genericModal").modal("hide");
+                nofn();
+            }
+
+            $("#genericModal .modal-footer").append(yesbtn);
+            $("#genericModal .modal-footer").append(nobtn);
+            $("#genericModalLabel").html(`<i class="fa fa-info-circle"></i> Give confirmation`);
+            $("#genericModal .btn-close").hide();
+        }
+        window.prompt = function (text = "Enter the choice", promptResult) {
+            enableWaiting();
+            $("#genericModal").modal("show");
+            $("#genericModal .modal-body").html(text + "<BR><input class='form-control' type='text' id='promptresult' name='promptresult' />");
+            $("#genericModal .modal-footer *").remove();
+            let yesbtn = document.createElement("button");
+            yesbtn.className = "btn btn-primary";
+            yesbtn.innerHTML = "OK";
+            yesbtn.onclick = function () {
+                disableWaiting();
+                promptResult($('#promptresult').val());
+                $("#genericModal .modal-body").html(" ");
+                $("#genericModal").modal("hide");
+            }
+
+            let nobtn = document.createElement("button");
+            nobtn.className = "btn btn-secondary";
+            nobtn.innerHTML = "Cancel";
+            nobtn.onclick = function () {
+                disableWaiting();
+                promptResult(null);
+                $("#genericModal .modal-body").html(" ");
+                $("#genericModal").modal("hide");
+            }
+
+            $("#genericModal .modal-footer").append(yesbtn);
+            $("#genericModal .modal-footer").append(nobtn);
+            $("#genericModalLabel").html(`<i class="fa fa-info-circle"></i> Give input`);
+            $("#genericModal .btn-close").hide();
+        }
+
+        window.enableWaiting = function () {
+            addEventListener("beforeunload", beforeUnloadListener, { capture: true });
+        }
+        window.disableWaiting = function () {
+            removeEventListener("beforeunload", beforeUnloadListener, { capture: true });
+        }
+        window.beforeUnloadListener = (event) => {
+            event.preventDefault();
+            return event.returnValue = "Are you sure you want to exit?";
+        };
+
+        window.nicePathHTML = function (pth, endicon = 'fa-folder text-yellow') {
+            let result = "";
+            let depth = 0;
+            if (pth.startsWith('/documents')) {
+                result = "<i class='fa fa-hdd text-primary'></i><br>";
+                pth = pth.substring(10);
+            }
+            let arz = pth.trim("/").split("/");
+
+            arz.filter((P) => { return P && (P != ""); })
+                .forEach(function (P) {
+                    depth++;
+
+                    result += "&nbsp;&nbsp;".repeat(depth) + "<i style='float:none;' class='fa " +
+                        ((depth >= (arz.length - 1)) ? endicon : " fa-folder text-yellow  ") +
+                        "'></i> " + P + "<br>";
+                });
+
+            return result;
+        }
+    </script>
+
+    <div class="modal fade" id="genericModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true"  style="background:rgba(0,0,0,0.3);">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="genericModalLabel"><i class="fa fa-info-circle"></i>WoW Berry DMS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="max-height: calc(80vh - 50px); overflow-y: auto; overflow-x:auto;">
+                    <p>Check it out!</p>
+                    The most powerful Document Management Software ever created.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TTL 0.995 ms -->
+
+    <link media="print" onload="this.media='all';" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script>
+        window.fwSettings = {
+            'widget_id': 44000003482
+        };
+        !function () { if ("function" != typeof window.FreshworksWidget) { var n = function () { n.q.push(arguments) }; n.q = [], window.FreshworksWidget = n } }()
+    </script>
+<script type='text/javascript' src='https://widget.freshworks.com/widgets/44000003482.js' async defer></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=G-2VZHSZCDR1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2VZHSZCDR1');
+</script>
+</body>
+</html>

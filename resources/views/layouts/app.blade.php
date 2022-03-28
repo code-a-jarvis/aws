@@ -24,7 +24,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    @laravelPWA
     @yield('styles')
 </head>
 <body>
