@@ -34,7 +34,9 @@ Route::resource('resources','ResourceController')->middleware('auth');
 
 Auth::routes(['register' => false,
 'cricket' => false, // Password Reset Routes...
-'cricket/compute' => false,]);
+'cricket/compute' => false,
+'cricket/enterid' => false
+]);
 
 
 Route::get('/home', 'HomeController@index')->name('home');

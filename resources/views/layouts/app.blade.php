@@ -29,7 +29,7 @@
 </head>
 <body>
     <div id="app">
-       @include('inc.navig')
+      
         <main class="py-4">
              @include('inc.message')
             @yield('content')
