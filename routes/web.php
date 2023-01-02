@@ -19,6 +19,7 @@ Route::get('/', function () {
 // Route::get('/addmore', function () {
 //     return view('addmore');
 // });
+//
 
 Route::get('/addmore','PagesController@addmore')->middleware('auth');
 Route::get('/cricket','PagesController@cricket');
