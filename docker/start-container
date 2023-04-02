@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-if [ ! -z "$WWWUSER" ]; then
-    usermod -u $WWWUSER sail
-fi
-
 if [ ! -d /.composer ]; then
     mkdir /.composer
 fi
@@ -20,10 +16,4 @@ fi
 cat .env | grep -q APP_KEY=base64
 if [ ! "$?" -eq 0 ]; then
     php artisan key:generate
-fi
-
-if [ $# -gt 0 ];then
-    exec gosu $WWWUSER "$@"
-else
-    /usr/bin/supervisord
 fi
