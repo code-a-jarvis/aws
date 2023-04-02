@@ -46,12 +46,11 @@ RUN update-alternatives --set php /usr/bin/php8.0
 
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.0
 
-RUN groupadd --force -g $WWWGROUP sail
-RUN useradd -ms /bin/bash --no-user-group -g $WWWGROUP -u 1337 sail
+
 
 COPY /docker/start-container /usr/local/bin/start-container
 COPY /docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY /docker/php.ini /etc/php/8.0/cli/conf.d/99-sail.ini
+COPY /dockertphp.ini /etc/php/8.0/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
 
 EXPOSE 8000
