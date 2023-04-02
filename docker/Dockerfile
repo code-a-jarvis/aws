@@ -50,7 +50,7 @@ RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.0
 
 COPY /docker/start-container /usr/local/bin/start-container
 COPY /docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY /dockertphp.ini /etc/php/8.0/cli/conf.d/99-sail.ini
+COPY /docker/php.ini /etc/php/8.0/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
 
 EXPOSE 8000
