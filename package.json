@@ -16,7 +16,7 @@
         "jquery": "^3.2",
         "jquery-ui": "^1.12.1",
         "jquery-ui-touch-punch": "^0.2.3",
-        "laravel-mix": "^5.0.1",
+        "laravel-mix": "^6.0",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
         "resolve-url-loader": "^3.1.0",
