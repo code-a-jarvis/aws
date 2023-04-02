@@ -46,9 +46,9 @@ RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.0
 
 
 
-COPY /docker/start-container /usr/local/bin/start-container
+COPY /docker/start-container /vendor/bin/start-container
 COPY /docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-RUN chmod +x /usr/local/bin/start-container
+RUN chmod +x /vendor/bin/start-container
 
 EXPOSE 8000
 
