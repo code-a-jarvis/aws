@@ -60,10 +60,42 @@ class PagesController extends Controller
       }
 
       public function choosematch(){
-        $url="https://cricapi.com/api/matches?apikey=62RBUPRBexUXXSq4qPsTM4XXpft1";
-        $txt=file_get_contents($url);
+
+$url = 'https://unofficial-cricbuzz.p.rapidapi.com/matches/list';
+
+// Custom headers
+$headers = array(
+    'X-RapidAPI-Host: unofficial-cricbuzz.p.rapidapi.com', // Example header
+    'X-RapidAPI-Key: 8df2f59a25msh5df00509f3d3039p128cd6jsn9e7aac9345e9', // Example authorization header
+);
+
+// Initialize cURL session
+$curl = curl_init();
+
+// Set cURL options
+curl_setopt_array($curl, array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true, // Return response as string
+    CURLOPT_HTTPHEADER => $headers, // Set custom headers
+    // Add more options as needed
+));
+
+// Execute the cURL request
+$response = curl_exec($curl);
+
+// Check for errors
+if(curl_errno($curl)) {
+    $error_message = curl_error($curl);
+    // Handle error
+    echo "Error: $error_message";
+}
+
+// Close cURL session
+curl_close($curl);
+
+
         $myfile=fopen('matches.txt','w');
-        fwrite($myfile,$txt);
+        fwrite($myfile,$response);
         fclose($myfile);
         $result=file_get_contents("matches.txt");
         $teams=array();
@@ -76,19 +108,27 @@ class PagesController extends Controller
         array_push($teams,"Rajasthan Royals");
         array_push($teams,"Mumbai Indians");
         $result=json_decode($result,true);
-       // var_dump($result);
-        $matches=$result['matches'] ;
-        $tosend=array();
-        foreach ($matches as $match){
-          if(in_array($match['team-1'], $teams)&&$match['matchStarted']!=false){
-            array_push($tosend,$match);
+       $tosend=array();
+        $matches=$result['typeMatches'] ;
+        foreach ($matches as $matchType){
+            if($matchType['matchType'] == "League") {
+              foreach ($matchType['seriesAdWrapper'] as $series) {
+                if($series['seriesMatches']['seriesId'] == "7607"){
+                foreach($series['seriesMatches']['matches'] as $actualMatch) {
+                    $data = array();
+                    $data['matchId'] = $actualMatch['matchInfo']['matchId'];
+                    $data['title'] = $actualMatch['matchInfo']['team1']['teamName'] . " vs " . $actualMatch['matchInfo']['team2']['teamName'];
+                    array_push($tosend,$data);
+                  }
+                }
+                }
+            }
           }
-        }
-       $data=array(
+          
+       $dataFinal=array(
         "matches"=>array_slice($tosend,0,4),
        );
-        return view('selectmatch')->with($data);
-
+        return view('selectmatch')->with($dataFinal);
       }
     
       public function test(Request $request){
