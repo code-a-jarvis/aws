@@ -94,7 +94,7 @@ class PagesController extends Controller
       public function test(Request $request){
         $id=$request->input('id');
         //return $id;
-        $url="https://web-production-ca90.up.railway.app/getMatch?matchId=";
+        $url="https://web-production-2f50.up.railway.app/getMatch?matchId=";
         $url.=$id;
         $txt=file_get_contents($url);
         $myfile=fopen('match.txt','w');
