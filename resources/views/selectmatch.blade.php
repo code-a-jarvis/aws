@@ -6,7 +6,7 @@
         <label for="sel1">Select the match:</label>
         <select class="form-control" name="id" id="sel1">
          @foreach ($matches as $match)
-        <option value="{{$match['unique_id']}}" name="id">{{$match['team-1']}} Vs {{$match['team-2']}}</option>
+        <option value="{{$match['matchId']}}" name="id">{{$match['title']}}</option>
          @endforeach
         </select>
       </div>
