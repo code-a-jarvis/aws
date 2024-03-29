@@ -13,11 +13,11 @@ class AddUniqueConstraint extends Migration
      */
     public function up()
     {
-        Schema::connection('mysql2')->table('resources', function (Blueprint $table) {
-            //
-            $table->increments('id')->unique();
-            $table->timestamps();
-        });
+        // Schema::connection('mysql')->table('resources', function (Blueprint $table) {
+        //     //
+        //     $table->increments('id')->unique();
+        //     $table->timestamps();
+        // });
     }
 
     /**

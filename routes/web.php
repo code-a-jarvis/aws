@@ -33,7 +33,8 @@ Route::post('task/save','TasksController@save')->middleware('auth');
 Route::post('ajax', 'TasksController@save')->name('ajaxRequest.post')->middleware('auth');
 Route::resource('resources','ResourceController')->middleware('auth');  
 
-Auth::routes(['register' => false,
+Auth::routes([
+"register" => false,
 'cricket' => false, // Password Reset Routes...
 'cricket/compute' => false,
 'cricket/enterid' => false
