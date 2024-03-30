@@ -22,6 +22,7 @@ Route::get('/', function () {
 //
 
 Route::get('/addmore','PagesController@addmore')->middleware('auth');
+Route::get('/addToBirthday','PagesController@addToBirthday')->middleware('auth');
 Route::get('/cricket','PagesController@cricket');
 Route::post('/cricket/compute/','PagesController@getscores');
 Route::get('/cricket/test','PagesController@test');
@@ -34,7 +35,6 @@ Route::post('ajax', 'TasksController@save')->name('ajaxRequest.post')->middlewar
 Route::resource('resources','ResourceController')->middleware('auth');  
 
 Auth::routes([
-"register" => false,
 'cricket' => false, // Password Reset Routes...
 'cricket/compute' => false,
 'cricket/enterid' => false

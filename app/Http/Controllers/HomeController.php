@@ -25,8 +25,9 @@ class HomeController extends Controller
     public function index()
     {
     
-        $search="2020-".strval(date('m'))."-".strval(date('d'));
-        $name=Birthday::where('bdate',$search)->get();
+        // $search="2020-".strval(date('m'))."-".strval(date('d'));
+        // $name=Birthday::where('bdate',$search)->get();
+        $name=array();
         $data=array(
             'name'=>$name
         );

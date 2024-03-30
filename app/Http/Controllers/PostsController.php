@@ -42,7 +42,7 @@ class PostsController extends Controller
         $post->body = $request->input('body');
         $post->save();
 
-        return redirect('/posts')->with('success', 'Post Created');
+        return redirect('/home')->with('success', 'Post Created');
     }
 
     /**

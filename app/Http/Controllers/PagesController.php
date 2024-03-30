@@ -7,6 +7,7 @@ use DB;
 use Illuminate\Support\Facades\Config;
 use App\Progresscount;
 use App\Score;
+use App\Birthday;
 
 class PagesController extends Controller
 {
@@ -28,9 +29,9 @@ class PagesController extends Controller
     }
 
     public function addmore(){
-       
       return view('addmore');
     }
+
     public function checkapi(Request $request){
        return "{
         'associatedApplications': [
@@ -60,38 +61,23 @@ class PagesController extends Controller
       }
 
       public function choosematch(){
-
-$url = 'https://unofficial-cricbuzz.p.rapidapi.com/matches/list';
-
-// Custom headers
-$headers = array(
-    'X-RapidAPI-Host: unofficial-cricbuzz.p.rapidapi.com', // Example header
-    'X-RapidAPI-Key: 8df2f59a25msh5df00509f3d3039p128cd6jsn9e7aac9345e9', // Example authorization header
-);
-
-// Initialize cURL session
-$curl = curl_init();
-
-// Set cURL options
-curl_setopt_array($curl, array(
-    CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true, // Return response as string
-    CURLOPT_HTTPHEADER => $headers, // Set custom headers
-    // Add more options as needed
-));
-
-// Execute the cURL request
-$response = curl_exec($curl);
-
-// Check for errors
-if(curl_errno($curl)) {
-    $error_message = curl_error($curl);
-    // Handle error
-    echo "Error: $error_message";
-}
-
-// Close cURL session
-curl_close($curl);
+        $url = 'https://unofficial-cricbuzz.p.rapidapi.com/matches/list';
+        $headers = array(
+              'X-RapidAPI-Host: unofficial-cricbuzz.p.rapidapi.com', 
+              'X-RapidAPI-Key: 8df2f59a25msh5df00509f3d3039p128cd6jsn9e7aac9345e9', 
+          );
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true, 
+            CURLOPT_HTTPHEADER => $headers, 
+        ));
+        $response = curl_exec($curl);
+        if(curl_errno($curl)) {
+            $error_message = curl_error($curl);
+            echo "Error: $error_message";
+        }
+        curl_close($curl);
 
 
         $myfile=fopen('matches.txt','w');
@@ -150,7 +136,6 @@ curl_close($curl);
         $post->name = $name;
         $post->bdate = $date;
         $post->save();
-      //  return redirect('/posts')->with('success', 'Post Created');
         return redirect('/home')->with('success', 'Birthday Created');
       } 
 
