@@ -25,7 +25,6 @@ Route::get('/addmore','PagesController@addmore')->middleware('auth');
 Route::get('/addToBirthday','PagesController@addToBirthday')->middleware('auth');
 Route::get('/cricket','PagesController@cricket');
 Route::post('/cricket/compute/','PagesController@getscores');
-Route::get('/cricket/test','PagesController@test');
 Route::get('/cricket/enterid','PagesController@enterid');
 Route::get('/cricket/choosematch','PagesController@choosematch');
 Route::get('/tasks','TasksController@index')->middleware('auth');
@@ -44,8 +43,6 @@ Auth::routes([
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/progress','PagesController@progress')->middleware('auth');
 Route::get('/progress/update','ProgressCountController@increase')->middleware('auth');
-
-Route::post('/checkapi','PagesController@checkapi');
 
 Route::get('/.well-known/microsoft-identity-association.json','PagesController@checkapi');
 

@@ -11,9 +11,10 @@ use App\Birthday;
 
 class PagesController extends Controller
 {
-    //
+  
    public $playerwisescores;
    public $pidtoname;
+
     public function progress()
     {
         $progress=Progresscount::where('id',1)->get();
@@ -24,30 +25,11 @@ class PagesController extends Controller
             'percentage'=>$percentage,
             'id'=>$id
         );
-        // return compact([$percentage,$id]);
          return view('progress')->with($data);
     }
 
     public function addmore(){
       return view('addmore');
-    }
-
-    public function checkapi(Request $request){
-       return "{
-        'associatedApplications': [
-          {
-            'applicationId': '597cb89b-623f-4be8-a9c8-4e8c39d7c7c4'
-          }
-        ]
-      }";
-      $id=$request->input('payload');
-      if($id==null){
-        $value=DB::table('checkapi')->get();
-        var_dump($value);
-      }
-      else{
-        DB::insert('UPDATE `checkapi` SET `payload`=?,`ide`=?',[$id,1]);
-      }
     }
 
 
@@ -117,24 +99,13 @@ class PagesController extends Controller
         return view('selectmatch')->with($dataFinal);
       }
     
-      public function test(Request $request){
-        $id=$request->input('id');
-        //return $id;
-        $url="https://web-production-2f50.up.railway.app/getMatch?matchId=";
-        $url.=$id;
-        $txt=file_get_contents($url);
-        $myfile=fopen('match.txt','w');
-        fwrite($myfile,$txt);
-        fclose($myfile);
-        return redirect('/cricket');
-      } 
 
       public function addToBirthday(Request $request){
         $name=$request->input('name');
         $date=$request->input('bdate');
         $post = new Birthday;
         $post->name = $name;
-        $post->bdate = $date;
+        $post->bdate = substr($date, 5);
         $post->save();
         return redirect('/home')->with('success', 'Birthday Created');
       } 
@@ -168,8 +139,7 @@ class PagesController extends Controller
         'team1'=>$team1,
         'team2'=>$team2,
     );
-    //return $team1[0];
-   // $GLOBALS['ps']=$this->playerwisescores;
+  
      return view('cricketselect')->with($data);
     }
     
