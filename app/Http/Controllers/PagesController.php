@@ -110,6 +110,18 @@ class PagesController extends Controller
         return redirect('/home')->with('success', 'Birthday Created');
       } 
 
+      public function fetchMatchScores(Request $request){
+        $id=$request->input('id');
+        //return $id;
+        $url="https://web-production-2f50.up.railway.app/getMatch?matchId=";
+        $url.=$id;
+        $txt=file_get_contents($url);
+        $myfile=fopen('match.txt','w');
+        fwrite($myfile,$txt);
+        fclose($myfile);
+        return redirect('/cricket');
+      } 
+
     public function cricket(){
       $txt="ty";
       $result=file_get_contents("match.txt");

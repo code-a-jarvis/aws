@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-{{ Form::open(array('action' => 'PagesController@test','id'=>'addform','method'=> 'get')) }}
+{{ Form::open(array('action' => 'PagesController@fetchMatchScores','id'=>'addform','method'=> 'get')) }}
 <div class="container">
     <div class="form-group">
         <label for="sel1">Select the match:</label>
@@ -15,4 +15,4 @@
 <input type="submit" class="btn-success"> 
 </div>
 {{ Form::close() }}
-@endsection
+@endsectionß
