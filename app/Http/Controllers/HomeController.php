@@ -24,13 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-    
-        $search="2020-".strval(date('m'))."-".strval(date('d'));
+        $search=strval(date('m'))."-".strval(date('d'));
         $name=Birthday::where('bdate',$search)->get();
         $data=array(
             'name'=>$name
         );
-
         return view('home')->with($data);
     }
 }

@@ -7,12 +7,14 @@ use DB;
 use Illuminate\Support\Facades\Config;
 use App\Progresscount;
 use App\Score;
+use App\Birthday;
 
 class PagesController extends Controller
 {
-    //
+  
    public $playerwisescores;
    public $pidtoname;
+
     public function progress()
     {
         $progress=Progresscount::where('id',1)->get();
@@ -23,30 +25,11 @@ class PagesController extends Controller
             'percentage'=>$percentage,
             'id'=>$id
         );
-        // return compact([$percentage,$id]);
          return view('progress')->with($data);
     }
 
     public function addmore(){
-       
       return view('addmore');
-    }
-    public function checkapi(Request $request){
-       return "{
-        'associatedApplications': [
-          {
-            'applicationId': '597cb89b-623f-4be8-a9c8-4e8c39d7c7c4'
-          }
-        ]
-      }";
-      $id=$request->input('payload');
-      if($id==null){
-        $value=DB::table('checkapi')->get();
-        var_dump($value);
-      }
-      else{
-        DB::insert('UPDATE `checkapi` SET `payload`=?,`ide`=?',[$id,1]);
-      }
     }
 
 
@@ -60,38 +43,23 @@ class PagesController extends Controller
       }
 
       public function choosematch(){
-
-$url = 'https://unofficial-cricbuzz.p.rapidapi.com/matches/list';
-
-// Custom headers
-$headers = array(
-    'X-RapidAPI-Host: unofficial-cricbuzz.p.rapidapi.com', // Example header
-    'X-RapidAPI-Key: 8df2f59a25msh5df00509f3d3039p128cd6jsn9e7aac9345e9', // Example authorization header
-);
-
-// Initialize cURL session
-$curl = curl_init();
-
-// Set cURL options
-curl_setopt_array($curl, array(
-    CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true, // Return response as string
-    CURLOPT_HTTPHEADER => $headers, // Set custom headers
-    // Add more options as needed
-));
-
-// Execute the cURL request
-$response = curl_exec($curl);
-
-// Check for errors
-if(curl_errno($curl)) {
-    $error_message = curl_error($curl);
-    // Handle error
-    echo "Error: $error_message";
-}
-
-// Close cURL session
-curl_close($curl);
+        $url = 'https://unofficial-cricbuzz.p.rapidapi.com/matches/list';
+        $headers = array(
+              'X-RapidAPI-Host: unofficial-cricbuzz.p.rapidapi.com', 
+              'X-RapidAPI-Key: 8df2f59a25msh5df00509f3d3039p128cd6jsn9e7aac9345e9', 
+          );
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true, 
+            CURLOPT_HTTPHEADER => $headers, 
+        ));
+        $response = curl_exec($curl);
+        if(curl_errno($curl)) {
+            $error_message = curl_error($curl);
+            echo "Error: $error_message";
+        }
+        curl_close($curl);
 
 
         $myfile=fopen('matches.txt','w');
@@ -131,7 +99,18 @@ curl_close($curl);
         return view('selectmatch')->with($dataFinal);
       }
     
-      public function test(Request $request){
+
+      public function addToBirthday(Request $request){
+        $name=$request->input('name');
+        $date=$request->input('bdate');
+        $post = new Birthday;
+        $post->name = $name;
+        $post->bdate = substr($date, 5);
+        $post->save();
+        return redirect('/home')->with('success', 'Birthday Created');
+      } 
+
+      public function fetchMatchScores(Request $request){
         $id=$request->input('id');
         //return $id;
         $url="https://web-production-2f50.up.railway.app/getMatch?matchId=";
@@ -141,17 +120,6 @@ curl_close($curl);
         fwrite($myfile,$txt);
         fclose($myfile);
         return redirect('/cricket');
-      } 
-
-      public function addToBirthday(Request $request){
-        $name=$request->input('name');
-        $date=$request->input('bdate');
-        $post = new Birthday;
-        $post->name = $name;
-        $post->bdate = $date;
-        $post->save();
-      //  return redirect('/posts')->with('success', 'Post Created');
-        return redirect('/home')->with('success', 'Birthday Created');
       } 
 
     public function cricket(){
@@ -183,8 +151,7 @@ curl_close($curl);
         'team1'=>$team1,
         'team2'=>$team2,
     );
-    //return $team1[0];
-   // $GLOBALS['ps']=$this->playerwisescores;
+  
      return view('cricketselect')->with($data);
     }
     
