@@ -67,7 +67,7 @@ return [
         'mysql2' => [
             'driver' => 'mysql',
             'host' => 'database-1.c5i6iucmyjv5.ap-south-1.rds.amazonaws.com',
-            'port' => '',
+            'port' => '3306',
             'database' =>'database-1',
             'username' => 'admin',
             'password' => 'reeddbpwd',
