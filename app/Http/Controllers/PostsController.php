@@ -56,6 +56,12 @@ class PostsController extends Controller
         //
     }
 
+    public function count()
+    {
+        $posts =  Post::count();
+        return $posts;
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

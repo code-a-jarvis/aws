@@ -29,14 +29,14 @@ Route::get('/cricket','PagesController@cricket');
 Route::post('/cricket/compute/','PagesController@getscores');
 Route::get('/cricket/test','PagesController@test');
 Route::get('/cricket/enterid','PagesController@enterid');
-Route::get('/cricket/choosematch','PagesController@choosematch');
+Route::get('/cricket/choosematch','PagesController@choosematch')->name('choosematch');
 Route::get('/tasks','TasksController@index')->middleware('auth');
 Route::get('/task/add','TasksController@add')->middleware('auth');
 Route::post('task/save','TasksController@save')->middleware('auth');
 Route::post('ajax', 'TasksController@save')->name('ajaxRequest.post')->middleware('auth');
 Route::resource('resources','ResourceController')->middleware('auth');  
 
-Auth::routes(['register' => false,
+Auth::routes(['register' => true,
 'cricket' => false, // Password Reset Routes...
 'cricket/compute' => false,
 'cricket/enterid' => false
@@ -59,3 +59,4 @@ Route::get('/.well-known/microsoft-identity-association','PagesController@checka
 
 
 Route::resource('posts', 'PostsController')->middleware('auth');
+Route::get('/postsCount', 'PostsController@count')->middleware('auth');
