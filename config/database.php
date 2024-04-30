@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'default' => 'mysql',
+    'default' => 'mysql2',
 
     /*
     |--------------------------------------------------------------------------
@@ -66,11 +66,11 @@ return [
 
         'mysql2' => [
             'driver' => 'mysql',
-            'host' => 'remotemysql.com',
+            'host' => 'database-1.c5i6iucmyjv5.ap-south-1.rds.amazonaws.com',
             'port' => '',
-            'database' =>'ZMRpmGbtwY',
-            'username' => 'ZMRpmGbtwY',
-            'password' => 'e9lIpAIZWB',
+            'database' =>'database-1',
+            'username' => 'admin',
+            'password' => 'reeddbpwd',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
