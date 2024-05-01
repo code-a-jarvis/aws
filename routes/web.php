@@ -29,6 +29,8 @@ Route::get('/cricket','PagesController@cricket');
 Route::post('/cricket/compute/','PagesController@getscores');
 Route::get('/cricket/test','PagesController@test');
 Route::get('/cricket/enterid','PagesController@enterid');
+Route::get('/fetchMatchScores','PagesController@fetchMatchScores')->name('fetchMatchScores');
+
 Route::get('/cricket/choosematch','PagesController@choosematch')->name('choosematch');
 Route::get('/tasks','TasksController@index')->middleware('auth');
 Route::get('/task/add','TasksController@add')->middleware('auth');
