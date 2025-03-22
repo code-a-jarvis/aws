@@ -81,7 +81,7 @@ class PagesController extends Controller
         foreach ($matches as $matchType){
             if($matchType['matchType'] == "League") {
               foreach ($matchType['seriesAdWrapper'] as $series) {
-                if($series['seriesMatches']['seriesId'] == "7607"){
+                if($series['seriesMatches']['seriesId'] == "9237"){
                 foreach($series['seriesMatches']['matches'] as $actualMatch) {
                     $data = array();
                     $data['matchId'] = $actualMatch['matchInfo']['matchId'];
@@ -113,7 +113,7 @@ class PagesController extends Controller
       public function fetchMatchScores(Request $request){
         $id=$request->input('id');
         //return $id;
-        $url="https://web-production-2f50.up.railway.app/getMatch?matchId=";
+        $url="https://web-production-fc499.up.railway.app/getMatch?matchId=";
         $url.=$id;
         $txt=file_get_contents($url);
         $myfile=fopen('match.txt','w');
